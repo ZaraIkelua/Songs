@@ -1,4 +1,4 @@
-![image](https://github.com/ZaraIkelua/Songs/assets/160255109/9fe66371-9a40-4883-b3cb-e66b0a59b438)# Artist - Album list application
+# Artist - Album list application
 - this application shows the list of all the artists availbale in our database.
 - then you can see the list of all the songs and their detils into the page next to it by clicking on the link
 
