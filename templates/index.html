@@ -1,0 +1,14 @@
+<html>
+    <head>
+      <title>Artist and Songs</title>
+    </head>
+    <body>
+        <h1>Artists</h1>
+
+        {% for row in rows %}
+        <p>Name:
+           <b> <a href="{{ url_for('show', id= row['id']) }}">{{row["name"]}}</a></b> |
+        </p>
+        {% endfor %}
+    </body>
+</html>
