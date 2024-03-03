@@ -25,6 +25,7 @@
    |───parse_csv.py
    |───app.py
    |─── songs.db
+   |─── requirements.txt
 ```
 
 ## Implementation 
