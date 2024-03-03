@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Songs - Artist</title>
+</head>
+<body>
+    <h1>Songs by - {{artist["name"]}}</h1>
+    {% if count %}
+    {% for row in rows %}
+    <p>Song:
+       <b>{{row["album_name"]}}</b> |
+       {{row["artist"]}} |
+        {{ row["release_date"]}} |
+       {{row['avg_rating']}} |
+       {{row["total_rating"]}} |
+        {{ row["total_reviews"]}} |
+        {{ row["genres"] }}
+    </p>
+    {% endfor %}
+    {% else %}
+    <em>No Songs by this artist in our collection</em>
+    {% endif %}
+</body>
+</html>
