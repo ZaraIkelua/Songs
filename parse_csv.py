@@ -31,3 +31,32 @@ conn.execute('''CREATE TABLE albums (
 )
 ''')
 print("table created successfully")
+
+
+# open the file to read it into the database
+with open('data/albums_csv.csv', newline='', encoding='utf-8') as f:
+    reader = csv.reader(f, delimiter=",")
+    next(reader) # skip the header line
+    artist_set = set()
+    id_ = 1
+    for row in reader:
+        # artist table entry
+        if row[1] not in artist_set:
+            cur.execute('INSERT INTO artist (name) VALUES (?)', (row[1], ))
+            conn.commit()
+            id_ += 1
+            artist_set.add(row[1])
+
+        data = list(row)
+        data[1] = id_
+        cur.execute('INSERT INTO albums '
+                    '(album_name, artist, release_date, avg_rating, total_rating, total_reviews, genres)'
+                    ' VALUES (?,?,?,?,?,?,?)', data)
+        conn.commit()
+
+print("data parsed successfully")
+
+
+
+
+
