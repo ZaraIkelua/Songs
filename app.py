@@ -5,9 +5,6 @@ from flask import Flask, render_template, request
 # __name__ is the name of the current Python module.
 app = Flask(__name__)
 
-
-# App Routing means mapping the URLs to a specific function that will handle the logic for that URL.
-# In our application, the URL (“/”) is associated with the root URL.
 @app.route('/')
 def index():
     # open the connection to the database

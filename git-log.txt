@@ -1,0 +1,22 @@
+* 693500f Update requirements.txt
+* 7606e34 Update README.md
+* 925305c Create requirements.txt
+* 01e3168 Update README.md
+* fadd68e Update README.md
+* 99e34b6 Update README.md
+* 230ea2b Update README.md
+* b7275e3 template to show the list of all the songs
+* c246503 Route get the list of songs by any specific artist
+* 05e9bc1 Template to show list of artists
+* a67e588 Flask app to show the list of artist
+* 64aaf79 Code to add data by reading from .csv file
+* 4c21d92 build database
+* 22abdf9 Auto create tables for the database
+* 3416aab Create albums_csv.csv
+* 911bd1c Delete data/songs.csv
+* f967b56 Delete data/parse_csv.py
+* fbebb8c Parse the data from csv file and then make db
+* ea88471 Create songs.csv
+* 717d461 Delete solution directory
+* c6b4db0 First Commit
+* 7831d8f Initial commit
